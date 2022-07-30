@@ -29,6 +29,7 @@ pipeline  {
       steps  {
          script  {
             bat  "mvn package"
+            echo "Package Created"
             }
           }
         }
@@ -36,6 +37,7 @@ pipeline  {
       steps  {
          script  {
             bat  "mvn verify"
+            echo "Verified"
             }
           }
         }

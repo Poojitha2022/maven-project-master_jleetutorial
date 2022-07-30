@@ -5,6 +5,7 @@ pipeline  {
       steps  {
          script  {
             bat  "mvn validate"
+            echo "Validation Completed"
             }
           }
         }
@@ -12,6 +13,7 @@ pipeline  {
       steps  {
          script  {
             bat  "mvn compile"
+            echo "Compilation Completed"
             }
           }
         }
